@@ -1,0 +1,4 @@
+Normal Page
+20050222
+<p>This is a normal page. The file for it is simple. The first line is the title of the page. The second like is the date the page was last modified (in YYYYMMDD format).</p>
+<p>Every file in this directory in the form of name.txt will be turned into name.html, unless name is a special value ("sections", "style", "template", "templateEntry", or "templateBody"). Note that thesee files are NOT listed under the navigation bar.</p>

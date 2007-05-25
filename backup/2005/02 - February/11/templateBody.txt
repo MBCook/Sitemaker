@@ -1,0 +1,4 @@
+<hr/>
+<p align=center size=small><i>###DATE###</i></p>
+<p>###TEXT###</p>
+<hr/>

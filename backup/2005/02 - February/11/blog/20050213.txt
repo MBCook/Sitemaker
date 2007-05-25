@@ -1,0 +1,2 @@
+Blog Format
+<p>Each entry goes into it's own file in the appropriate directory named YYYYMMDD.txt. The first line of the file is the title of the entry, every other line is the content of that entry.</p>

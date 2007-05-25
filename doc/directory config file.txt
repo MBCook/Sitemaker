@@ -1,0 +1,5 @@
+Style
+Template Entry Name
+Template Body Name
+Template Content Name
+Subsection List

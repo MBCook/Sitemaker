@@ -1,0 +1,18 @@
+Codes used for Print at Depth:
+
+-1 - Error
+ 1 - Writing file
+ 2 - Entering directory
+ 3 - Leaving directory
+ 4 - Skipping file
+ 5 - Beginning processing
+ 6 - Done processing
+ 7 - Beginning uploading
+ 8 - Uploading file
+ 9 - Done uploading
+10 - Done with all uploading
+11 - Error establishing FTP connection
+12 - Error during FTP session
+13 - Warning
+14 - Opening the FTP connection
+15 - Closing the FTP connection

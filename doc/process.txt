@@ -1,0 +1,58 @@
+Run main()
+	initialize global variables (template stuff, special stuff)
+	process root directory (path /, None, site title, depth of 1)
+		prepare the navigation bar code
+		figure out the kind of directory this is
+		if blog
+			getBlogContent
+			write the file
+		elif normal
+			for each file in directory
+				if not special file
+					getNormalContent
+					write the file
+				else
+					skip the file
+		else
+			raise error
+	get section list
+	if list is empty
+		return
+	else
+		for each subdir
+			figure out its path
+			make the navigation html for it
+			process the directory (path, nav, section, depth++)
+
+Run main()
+	Initialize global variables
+	Connect to FTP server
+	Login
+	Change to remote base directory
+	processDirectory("", localBase, remoteBase, 1, ftp, True)
+		generate the local path
+		generate the remote path
+		try to switch to the remote direcotry to process
+			if it didn't work, create the directory
+		get a list of the files in the remote directory
+		get a list of the files in the local directory
+		figure out the list of files that need to be updated
+		for each file that needs updating
+			if it is a special file pass
+			if the extention is .txt then pass
+			if we are here, append the file to the list of normal files
+		get a list of the subdirectories of the current directory
+		for each file that is normal
+			if it is special, skip it
+			otherwise:
+				get the file's full local path
+				open the file
+				figure out the file's extention
+				if the file is ascii, upload as ascii
+				if the file is binary, upload as binary
+		for each dir in the subdir list
+			get the path of the subdir
+			processDirectory(the path, localbase, remotebase, depth + 1, ftp, doUpload)
+		done
+	Close connection
+	Done

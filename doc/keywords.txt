@@ -1,0 +1,19 @@
+Recognised keywords:
+
+Title - Title
+Content - Content
+EntryTemplate - The name of the Entry Template
+ListTemplate - The name of the List Template
+BodyTemplate - The name of the Body Template
+PageTemplate - The name of the Page Template
+GalleryTemplate - The name of the Gallery Template
+GalleryEntry - The name of the Gallery Entry template
+GalleryLarge - The name of the large version of picutre
+Date - Date content was written on
+Category - Category
+CSS - The CSS file to include
+LocalRoot - The root of the site on the local filesystem
+FtpServer - The server to connect to where the files will go
+FtpBase - The remote directory that acts as root
+FtpUser - The remote user name
+FtpPass - The password for the remote user. If not there, ask for it.

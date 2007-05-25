@@ -1,0 +1,62 @@
+Theory of operation:
+
+The title of a gallery is the "Title" attribute of the config file for the directory. The description of the gallery is taken from the "index.txt" file.
+
+Images stored in the directory are the "full size" thumbnails. Suggest 480x360 max. Full size images have filenames that do NOT end in "_thumb"
+
+Thumbnails are 160x120.
+
+Thumbnails are stored in the same directory with "_thumb" appended. DSC0123.jpg > DSC0123_thumb.jpg
+
+Notes are in a text file with the same name as the image so DSC0123.jpg goes with DSC0123.txt
+
+EXIF data to put:
+
+	Width, Height				- XResolution, YResolution
+	Date					- DateTime, DateTimeOrigional
+	ISO					- ISOSpeedRatings, ISOSetting, ISOSelection,
+							ISOSpeedRequested, ISO
+	F-stop					- ApertureValue
+	Shutter speed				- ShutterSpeedValue, ExposureTime
+	Camera make/model			- Make, Model
+	Mode (program, auto, manual, etc.)	- ExposureProgram
+	Focal length				- FocalLength
+	Distance				- SubjectDistance
+
+Will have to automatically skip reading EXIF data on non-JPEG images.
+
+Index page format:
+
+...
+-------------------------------------------------------------
+|             |                                             |
+|   Picture   |  Short description. Click on pic for large. |
+|             |                                             |
+-------------------------------------------------------------
+|             |                                             |
+|   Picture   |  Short description. Click on pic for large. |
+|             |                                             |
+-------------------------------------------------------------
+...
+
+Full size page format:
+
+                  ----------------------
+                  |                    |
+                  |      Picture       |
+                  |                    |
+                  ----------------------
+
+----------------------------------------------------------
+|                                                        |
+| Table of EXIF data                                     |
+|                                                        |
+----------------------------------------------------------
+|                                                        |
+| Short Comment                                          |
+|                                                        |
+----------------------------------------------------------
+|                                                        |
+| Long Comment                                           |
+|                                                        |
+----------------------------------------------------------

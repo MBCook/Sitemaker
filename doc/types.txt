@@ -1,0 +1,7 @@
+Section Types:
+
+Directory
+File
+Links
+Gallery
+List (Things to Get, Books to Read, etc)

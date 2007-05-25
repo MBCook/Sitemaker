@@ -1,0 +1,16 @@
+Section class:
+
+	Type - Individual file? Directory? What?
+	Name - The name of the section
+	Path - The path for the section ("robots/", "cars.html", what?)
+	Process - The function to process the section for us and make
+			all the pages. This is where work is done
+
+Section will be subclassed into the various kinds.
+
+e.g. blogSection, fileSection, whatever.
+
+
+For simplicity, each section MUST BE IN A DIRECTORY!!!!!!
+
+Normal files are ONLY OK INSIDE FileSection!

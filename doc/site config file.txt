@@ -1,0 +1,11 @@
+Make a central class to turn a configuration file into a dictionary.
+
+Parameters in the main configuration file:
+------------------------------------------
+
+* Site title
+* Root directory
+* Modules to load (directorySection, fileSection, gallerySection, etc)
+* Template files
+* Progress output (nothing, tokens for parsing, full text descriptions)
+* Special names/files/extensions/directories/etc to ignore

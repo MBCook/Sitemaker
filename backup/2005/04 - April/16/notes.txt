@@ -1,0 +1,1 @@
+This is before an update using newly written code to make sitemakerUpload only update the files that have changed or been created.

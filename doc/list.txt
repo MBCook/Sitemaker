@@ -1,0 +1,42 @@
+Properties we will be recognizing for now:
+
+ItemName
+ItemURL
+Price
+SupplierName
+SupplierURL
+Needs
+Optional
+Description
+Category
+Rating (this is out of 100)
+
+###############
+
+the listEntry.txt file tells us how to form an entry, it is a special template.
+
+###############
+
+the entrySetup.txt file tells us which lines go in what order and how to fill them in. The format is described below:
+
+a. The first line is a list of which template lines go in which order. They are comma separated, and can be selected with an '|' to mean OR.
+b. The second line is the sort order
+c. Next is the header table contents in english (must match sort order)
+d. After that is a list of the lines (doesn't need to be in order) and which symbols they need (the "###something###") to be filled in.
+e. If there are no dependencies, the special token "NONE" is used.
+f. In an OR, the first line who has all it's dependancies specified will be used, in left to right order.
+g. The special name linkName is the same as the name of the file the entry was loaded out of, this allows us to link between things.
+
+###############
+
+So here is how we do things:
+
+1. Load up the template (pre-load it with the others?) and put it in a dict
+2. Load up entrySetup and parse it out putting it into dictionary and a list (list for the first line, dictionary to hold the rest)
+3. Go through the directory loading each file (skip ones we don't look at, the special ones), putting them into dictionaries (each file), and then each file goes into a master dictionary as mastDict["filename"] = fileDict
+4. Go through that (can use some order if wanted) and generate the HTML for each one, putting it together or in another dictionary with the filename as the key
+5. Assemble the page
+
+###############
+
+The config info for the directory will need an to fill ListTemplate so we know which template to use.

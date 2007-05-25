@@ -1,0 +1,2 @@
+normal - Normal Section
+blog - Blog Section
